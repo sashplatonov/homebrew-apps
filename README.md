@@ -1,4 +1,4 @@
-# Sashplatonov Homebrew Apps
+# Homebrew Apps
 
 <a id="top"></a>
 
