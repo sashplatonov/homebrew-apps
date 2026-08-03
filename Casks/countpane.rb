@@ -1,6 +1,6 @@
 cask "countpane" do
-  version "1.0.3"
-  sha256 "c181a363173e22bb180c075b9ccd397ee7a8ed2ca2735b7a832cc5a6fd3ff8be"
+  version "1.0.4"
+  sha256 "eb7d6fdd4c1d1d6840e02e958e26799774baf9afbb80617be96cdf985f95b1be"
 
   url "https://github.com/sashplatonov/countpane/releases/download/v#{version}/Countpane-#{version}.dmg"
   name "Countpane"
