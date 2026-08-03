@@ -1,13 +1,13 @@
 cask "countpane" do
-  version "1.0.1"
-  sha256 "40c6e4b3478087d28854c45531c0fba7a58140167aa360ad82a997012ade4c85"
+  version "1.0.2"
+  sha256 "a2c56621a4dedcd7046b9d1aaa1d211332c7ddce0ea2514e6f298ba8e8d70acd"
 
-  url "https://github.com/sashplatonov/countpane/releases/download/v1.0.1/Countpane-1.0.1.dmg"
+  url "https://github.com/sashplatonov/countpane/releases/download/v1.0.2/Countpane-1.0.2.dmg"
   name "Countpane"
-  desc "Native macOS countdown manager with always-on-top desktop widgets"
+  desc "Native countdown manager with always-on-top desktop widgets"
   homepage "https://github.com/sashplatonov/countpane"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Countpane.app"
 
