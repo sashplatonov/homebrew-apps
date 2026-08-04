@@ -116,18 +116,24 @@ Use the existing [`Casks/countpane.rb`](Casks/countpane.rb) as the reference for
 
 ## ✅ Validate changes
 
-Run the relevant Homebrew checks from the repository root:
+Open a pull request for changes under `Casks/` or `Formula/`. The `brew
+test-bot` workflow validates cask changes on one macOS Sequoia runner and
+avoids running for README-only edits. Countpane's release workflow is the
+trusted direct-main exception: it audits the generated cask before updating
+this tap.
+
+Run the relevant Homebrew checks locally from the repository root:
 
 ```sh
-brew audit --cask Casks/countpane.rb
-brew style Casks/countpane.rb
+brew audit --cask --tap sashplatonov/apps
+brew style --cask sashplatonov/apps
 ```
 
 For a formula, use the corresponding `--formula` audit and the file under `Formula/`:
 
 ```sh
-brew audit --formula Formula/<formula-name>.rb
-brew style Formula/<formula-name>.rb
+brew audit --formula --tap sashplatonov/apps
+brew style --formula sashplatonov/apps
 ```
 
 Before opening a pull request, verify that the package installs, launches or executes correctly, and that its version and checksum match the upstream release.
