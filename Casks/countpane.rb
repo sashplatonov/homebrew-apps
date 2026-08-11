@@ -1,9 +1,9 @@
 cask "countpane" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.2.0"
-  sha256 arm:   "c924106019eb0ff57a9685d942a1076d0003f698ce59add93f21eeabd1c4d559",
-         intel: "6359526df903bbc57df5874089510da5b3144660d1fcd166e165c0a5fc82dffb"
+  version "1.3.0"
+  sha256 arm:   "43c4a1ae389aed9f4d2a99f0f2d191a7d573cdea9c980f9c3faf2396b1477161",
+         intel: "c43e29da4c3a74de4a05032b7994960e7d7ba09d255d5f37f93c7904e3263f94"
 
   url "https://github.com/sashplatonov/countpane/releases/download/v#{version}/Countpane-#{version}-#{arch}.dmg"
   name "Countpane"
